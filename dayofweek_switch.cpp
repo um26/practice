@@ -3,7 +3,7 @@
 using namespace std;
 
 string day_of_the_week(int day_num){
-    string day_name
+    string day_name;
     switch(day_num){
         case(0):
             day_name= "Sunday";
@@ -24,15 +24,17 @@ string day_of_the_week(int day_num){
             day_name= "Friday";
             break;
         case(6):
-            day_name= "Satuday";
+            day_name= "Saturday";
             break;
         default:
-            day_name="Invalid Day Number"
+            day_name="Invalid Day Number";
             
     }
+    return day_name;
 } 
 
 int main(){
+    int day_num;
     cin>> day_num;
-    cout<< day_of_the_week(day_num)\n;
+    cout<< day_of_the_week(day_num)<<endl;
 }
